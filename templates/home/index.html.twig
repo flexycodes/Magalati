@@ -1,0 +1,487 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Magalati - Magazine and Blog{% endblock %}
+
+{% block body %}
+	<!--********************************************************-->
+	<!--********************* SITE HEADER **********************-->
+	<!--********************************************************-->
+	{% block header %}
+		{% include 'header/header.html.twig' %}
+	{% endblock %}
+	<!--~./ end site header ~-->
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	    Start Sidebar Menu
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	{% block sidebarmenu %}
+		{% include 'sidebar/sidebar.html.twig' %}
+	{% endblock %}
+	<!--~./ end Sidebar Menu ~-->
+
+	<!--********************************************************-->
+    <!--********************* SITE CONTENT *********************-->
+    <!--********************************************************-->
+	{% block sitecontent %}
+		<div class="site-content">
+	        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	            Start Frontpage Slider Posts
+	        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	        <div class="frontpage-slider-posts slider-style-two slider-style-four">
+	            <div id="frontpage-slider" class="owl-carousel frontpage-slider-two carousel-nav-align-center"> 
+	                <article class="slider-item">
+	                    <figure class="slider-thumb">  
+	                        <img src="{{ asset('assets/images/1.jpg') }}" alt="Thmubnail"> 
+	                    </figure><!--./ slider-thumb -->
+	                    <div class="content-entry-wrap">
+	                        <div class="entry-content">
+	                            <h3 class="entry-title">
+	                                <a href="post-details.html">Serena Williams can 'absolutely' break Court's Grand Slam record</a>
+	                            </h3><!--./ entry-title -->
+	                        </div><!--./ entry-content -->
+
+	                        <div class="entry-meta-content">
+	                            <div class="entry-date">
+	                                <span>October 24, 2019</span>
+	                            </div><!--./ entry-date -->
+	                            <div class="entry-views">
+	                                <span>3 Min Read</span>
+	                            </div><!--./ entry-views -->
+	                            <div class="entry-category">
+	                                <a class="cat" href="#">Sport</a>
+	                            </div><!--./ entry-category -->
+	                        </div><!--./ entry-meta-content -->
+	                    </div><!--./ content-entry-wrap -->
+	                </article><!--./ slider-item -->
+	                
+	                <article class="slider-item">
+	                    <figure class="slider-thumb">  
+	                        <img src="{{ asset('assets/images/2.jpg') }}" alt="Thmubnail"> 
+	                    </figure><!--./ slider-thumb -->
+	                    <div class="content-entry-wrap">
+	                        <div class="entry-content">
+	                            <h3 class="entry-title">
+	                                <a href="post-details.html">Serena Williams can 'absolutely' break Court's Grand Slam record</a>
+	                            </h3><!--./ entry-title -->
+	                        </div><!--./ entry-content -->
+
+	                        <div class="entry-meta-content">
+	                            <div class="entry-date">
+	                                <span>October 24, 2019</span>
+	                            </div><!--./ entry-date -->
+	                            <div class="entry-views">
+	                                <span>3 Min Read</span>
+	                            </div><!--./ entry-views -->
+	                            <div class="entry-category">
+	                                <a class="cat" href="#">Fashion</a>
+	                            </div><!--./ entry-category -->
+	                        </div><!--./ entry-meta-content -->
+	                    </div><!--./ content-entry-wrap -->
+	                </article><!--./ slider-item -->
+	                
+	                <article class="slider-item">
+	                    <figure class="slider-thumb">  
+	                        <img src="{{ asset('assets/images/3.jpg') }}" alt="Thmubnail"> 
+	                    </figure><!--./ slider-thumb -->
+	                    <div class="content-entry-wrap">
+	                        <div class="entry-content">
+	                            <h3 class="entry-title">
+	                                <a href="post-details.html">Serena Williams can 'absolutely' break Court's Grand Slam record</a>
+	                            </h3><!--./ entry-title -->
+	                        </div><!--./ entry-content -->
+
+	                        <div class="entry-meta-content">
+	                            <div class="entry-date">
+	                                <span>October 24, 2019</span>
+	                            </div><!--./ entry-date -->
+	                            <div class="entry-views">
+	                                <span>3 Min Read</span>
+	                            </div><!--./ entry-views -->
+	                            <div class="entry-category">
+	                                <a class="cat" href="#">Fashion</a>
+	                            </div><!--./ entry-category -->
+	                        </div><!--./ entry-meta-content -->
+	                    </div><!--./ content-entry-wrap -->
+	                </article><!--./ slider-item -->
+	            </div><!--/#frontpage-slide --> 
+	        </div><!--~./End frontpage slider posts ~-->
+	        
+	        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	            Start About Us Area
+	        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	        <div class="about-us-area bg-golden">
+	            <div class="container">
+	                <div class="quote">
+	                    <img src="{{ asset('assets/images/icon/quote-gray.png') }}" alt="img">
+	                </div>
+	                <div class="row align-items-center">
+	                    <div class="col-lg-6">
+	                        <div class="about-us-content">
+	                            <h3 class="name">Hi, My Name Is <i>Fatima</i></h3>
+	                            <p>Why money's in that office, right? If she start giving means some bullet about ain't there, and we got to go placing else and get it. Why not can money's in that office, right? If she start giving means some bullshit for about it ain't there. Why money's in that office, right? If she start giving means some bullet about ain't there, and we got to go placing else and get it. Why not can money's in that office.</p>
+	                            <div class="author-sign">
+	                                <img src="{{ asset('assets/images/signature.png') }}" alt="img">
+	                            </div>
+	                        </div><!--~./ about-us-content ~-->
+	                    </div>
+	                    <div class="col-lg-6">
+	                        <div class="about-thumb text-center">
+	                            <img src="{{ asset('assets/images/about-me.png') }}" alt="img">
+	                        </div><!--~./ about-thumb ~-->
+	                    </div>
+	                </div>
+	            </div>
+	        </div><!--~./ end about us area ~-->
+	        
+	        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	            Start Main Wrapper
+	        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	        <div class="main-wrapper ptb-100 blog-style-two">
+	            <div class="container">
+	                <div class="row justify-content-center">
+	                    <div class="col-lg-10">
+	                        <!--~~~~~ Start Site Main ~~~~~-->
+	                        <main class="site-main">
+	                            <div class="section-header style-three text-center">
+	                                <h2 class="section-title">Recent Articles</h2>
+	                            </div><!--~./ end section header ~-->
+	                            <div id="masonry-posts" class="row">
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/1.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">LifeStyle</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">This gun is advertised as the gun in american</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/2.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Fashion</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">Insight: Vinales’ Win Highlights Big Decision</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/3.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Travel</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">Under Armour Third-Quarter Revenue</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/4.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Travel</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">Under Armour Third-Quarter Revenue</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/5.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Diet</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">Insight: Vinales’ Win Highlights Big Decision</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/6.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Beauty</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">This gun is advertised as the gun in american</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/7.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Lifestyle</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">Train Passing In Colorful Street Lovely Flowers</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/8.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Travel</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">This gun is advertised as the gun in american</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                                
+	                                <!--~~~~~ Start Post ~~~~~-->
+	                                <div class="col-lg-4 col-md-6 grid-item">
+	                                    <article class="post hentry post-grid style-three">
+	                                        <div class="entry-thumb">
+	                                            <figure class="thumb-wrap">
+	                                                <a href="post-details.html">
+	                                                    <img src="{{ asset('assets/images/blog/9.jpg') }}" alt="post">
+	                                                </a>
+	                                            </figure><!--./ thumb-wrap -->
+	                                        </div><!--./ entry-thumb -->
+	                                        <div class="content-entry-wrap">
+	                                            <div class="entry-meta-content">
+	                                                <div class="entry-date">
+	                                                    <span>October 24, 2019</span>
+	                                                </div><!--./ entry-date -->
+	                                                <div class="entry-category">
+	                                                    <a class="cat" href="#">Beauty</a>
+	                                                </div><!--./ entry-category -->
+	                                            </div><!--./ thumb-wrap -->
+	                                            <div class="entry-content">
+	                                                <h3 class="entry-title">
+	                                                    <a href="post-details.html">Why Chanel Is Raising Popular Bags</a>
+	                                                </h3><!--./ entry-title -->
+	                                            </div><!--./ entry-content -->
+	                                        </div><!--./ content-entry-wrap -->
+	                                    </article>
+	                                </div><!--~./ end post ~-->
+	                            </div>
+	                        </main>
+	                        <!--~./ end site main ~-->
+	                        
+	                        <!--~~~~~ Start Paging Navigation ~~~~~-->
+	                        <nav class="navigation paging-navigation pagination-center">
+	                            <ul class="nav-links">
+	                                <li class="nav-previous"> <!-- disabled class add when no pagination -->
+	                                    <a href="#">Previous</a>
+	                                </li>                                      
+	                                <li><a href="#">1</a></li>
+	                                <li class="active"><a href="#" class="page-numbers">2</a></li>
+	                                <li><a href="#" class="page-numbers">3</a></li>
+	                                <li><a href="#" class="page-numbers">4</a></li>
+	                                <li class="nav-next">
+	                                    <a href="#">Next</a>
+	                                </li> 
+	                            </ul>
+	                        </nav><!--~./ end paging navigation ~-->
+	                    </div>
+	                </div>
+	            </div>
+	        </div><!--~./ end main wrapper ~-->
+	        
+	        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	            Start Instagram Widget Area
+	        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	        <div class="instagram-widget-area style-two">
+	            <div class="widget bt-instafeed-widget">
+	                <ul id="instafeed">
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/1.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/2.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/3.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/4.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/5.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/6.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/7.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                    <li class="feed-item">
+	                        <a href="#">
+	                            <img src="{{ asset('assets/images/instagram/8.jpg') }}" alt="#">
+	                        </a>
+	                    </li>
+	                </ul> 
+	                <div class="instafeed-heading">
+	                    <div class="heading">
+	                        <h4>Follow Us <span>#magla</span></h4>
+	                    </div>
+	                </div><!--/.instafeed-heading-->
+	            </div><!--/.widget-instafeed-->
+	        </div><!--~./ end instagram widget area ~-->
+    </div>
+	{% endblock %}
+	<!-- End site content -->
+	
+	<!--********************************************************-->
+    <!--********************** SITE FOOTER *********************-->
+    <!--********************************************************-->
+	{% block footer %}
+		{% include 'footer/footer.html.twig' %}
+	{% endblock %}
+	<!--~./ end site footer ~-->
+
+{% endblock %}

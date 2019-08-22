@@ -47,5 +47,27 @@ class MenuRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findAllGreaterThanStatus($status, $parent_id=0): array
+    {
+        //->andWhere('m.parent_id = :parent_id')
+
+        $qb = $this
+            ->createQueryBuilder('m')
+            ->select('m.id, m.menu_name as m_name ,m.parent_id , m.link, m.status, m.sort_order as m_sort')
+            ->where('m.status = :status')
+            
+            ->setParameters(
+                array(
+                    'status'=> $status, 
+                )
+            )
+            ->orderBy('m.id', 'ASC')
+            ->getQuery()
+        ;
+        $menus = $qb->execute();
+
+        return $menus;
+    }
     
 }

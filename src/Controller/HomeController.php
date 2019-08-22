@@ -17,12 +17,13 @@ class HomeController extends AbstractController
     public function index()
     {
         $repository = $this->getDoctrine()->getRepository(Menu::class);
-        $menus = $repository->findAll();
+        $menus = $repository->findAllGreaterThanStatus(1);
 
         dump($menus);
 
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
+            'menus'           => $menus
         ]);
     }
 }

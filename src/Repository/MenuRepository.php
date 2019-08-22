@@ -40,11 +40,12 @@ class MenuRepository extends ServiceEntityRepository
     public function findOneBySomeField($value): ?Menu
     {
         return $this->createQueryBuilder('m')
-            ->andWhere('m.exampleField = :val')
+            ->andWhere('m.status = :val')
             ->setParameter('val', $value)
             ->getQuery()
             ->getOneOrNullResult()
         ;
     }
     */
+    
 }

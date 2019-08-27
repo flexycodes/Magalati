@@ -41,6 +41,11 @@ class Menu
      */
     private $sort_order = 0;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $routename;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -105,4 +110,18 @@ class Menu
 
         return $this;
     }
+
+    public function getRouteName(): ?string
+    {
+        return $this->routename;
+    }
+
+    public function setRouteName(string $routename): self
+    {
+        $this->routename = $routename;
+
+        return $this;
+    }
+
+    
 }

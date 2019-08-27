@@ -5,23 +5,23 @@ namespace App\Controller;
 use App\Entity\Menu;
 use App\Form\MenuType;
 
-use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController extends AbstractController
+class BlogController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/blog", name="blog")
      */
     public function index()
     {
         $repository = $this->getDoctrine()->getRepository(Menu::class);
         $menus = $repository->findAllGreaterThanStatus(1);
-        
-        return $this->render('home/index.html.twig', [
-            'controller_name' => 'HomeController',
+
+        return $this->render('pages//blog/index.html.twig', [
+            'controller_name' => 'BlogController',
             'menus'           => $menus
         ]);
     }
+
 }

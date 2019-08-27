@@ -202,6 +202,9 @@ a:active {
   outline: 0;
   text-decoration: none;
 }
+.main-navigation li.active a {
+  color: #D82E2A !important;
+}
 
 button:focus {
   outline: 0px dotted;

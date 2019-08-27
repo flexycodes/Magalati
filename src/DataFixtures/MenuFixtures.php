@@ -17,60 +17,34 @@ class MenuFixtures extends Fixture
 
         $menu->setMenuName('Home');
         $menu->setParentId(0);
-        $menu->setLink('index.php');
+        $menu->setLink('/');
         $menu->setStatus(1);
         $menu->setSortOrder(1);
+        $menu->setRouteName("home");
 
         $manager->persist($menu);
 
+        //Tech
         $menu = new Menu();
 
-        $menu->setMenuName('Magazine');
-        $menu->setParentId(1);
-        $menu->setLink('magazine.php');
-        $menu->setStatus(1);
-        $menu->setSortOrder(1);
-
-        $manager->persist($menu);
-
-        $menu = new Menu();
-
-        $menu->setMenuName('Blog');
-        $menu->setParentId(1);
-        $menu->setLink('blog.php');
-        $menu->setStatus(1);
-        $menu->setSortOrder(2);
-
-        $manager->persist($menu);
-
-        //Home
-        $menu = new Menu();
-
-        $menu->setMenuName('Post Styles');
+        $menu->setMenuName('Tech');
         $menu->setParentId(0);
-        $menu->setLink('poststyles.php');
+        $menu->setLink('/category/tech');
         $menu->setStatus(1);
         $menu->setSortOrder(2);
+        $menu->setRouteName("category");
 
         $manager->persist($menu);
 
+        //Sports
         $menu = new Menu();
 
-        $menu->setMenuName('Grid post');
-        $menu->setParentId(4);
-        $menu->setLink('grid.php');
+        $menu->setMenuName('Sports');
+        $menu->setParentId(0);
+        $menu->setLink('/category/sports');
         $menu->setStatus(1);
-        $menu->setSortOrder(1);
-
-        $manager->persist($menu);
-
-        $menu = new Menu();
-
-        $menu->setMenuName('List post');
-        $menu->setParentId(4);
-        $menu->setLink('list.php');
-        $menu->setStatus(1);
-        $menu->setSortOrder(2);
+        $menu->setSortOrder(3);
+        $menu->setRouteName("category");
 
         $manager->persist($menu);
 
@@ -79,9 +53,22 @@ class MenuFixtures extends Fixture
 
         $menu->setMenuName('About us');
         $menu->setParentId(0);
-        $menu->setLink('about.php');
+        $menu->setLink('/about');
         $menu->setStatus(1);
-        $menu->setSortOrder(3);
+        $menu->setSortOrder(4);
+        $menu->setRouteName("about");
+
+        $manager->persist($menu);
+
+        //About us
+        $menu = new Menu();
+
+        $menu->setMenuName('Blog');
+        $menu->setParentId(0);
+        $menu->setLink('/blog');
+        $menu->setStatus(1);
+        $menu->setSortOrder(5);
+        $menu->setRouteName("blog");
 
         $manager->persist($menu);
 
@@ -90,9 +77,10 @@ class MenuFixtures extends Fixture
 
         $menu->setMenuName('Contact us');
         $menu->setParentId(0);
-        $menu->setLink('contact.php');
+        $menu->setLink('/contact');
         $menu->setStatus(1);
-        $menu->setSortOrder(4);
+        $menu->setSortOrder(6);
+        $menu->setRouteName("contact");
 
         $manager->persist($menu);
 

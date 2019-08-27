@@ -54,12 +54,13 @@ class MenuRepository extends ServiceEntityRepository
 
         $qb = $this
             ->createQueryBuilder('m')
-            ->select('m.id, m.menu_name as m_name ,m.parent_id , m.link, m.status, m.sort_order as m_sort')
+            ->select('m.id, m.menu_name as m_name ,m.parent_id , m.link, m.status, m.routename, m.sort_order as m_sort')
             ->where('m.status = :status')
-            
+            ->andWhere('m.parent_id = :parent_id')
             ->setParameters(
                 array(
                     'status'=> $status, 
+                    'parent_id'=> $parent_id, 
                 )
             )
             ->orderBy('m.id', 'ASC')
